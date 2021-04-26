@@ -2,21 +2,21 @@ const webpush = require('web-push');
 
 // console.log(webpush.generateVAPIDKeys());
 
-const publicKey = 'BPGr1obqRzkwt7ocarayUZPMJLNfeT5yMdMlnnEL3QSLBdlo2hEr6Q8eQlAvSl3_2_lR1jiCI2yDE3DqcbAgvIk';
-const privateKey = 'VZLeyLDvIGUvJFqSkx9k33D_PPJoQIktY3NwGoyodvY';
+const publicKey = '';
+const privateKey = '';
 
 //This will come from api call from frontend
 const newSub = {
-    endpoint: "https://fcm.googleapis.com/fcm/send/dgS078MAavQ:APA91bF1nwGQP0ZIqk57PNy-1w6t2jXqejO1ksjHPCN2gKmdAXmRxbmTQOALowDSBpm5VWHpxZS0pEH8hi4cyPbkVJgoNJVwdj8Jeiyp3tKuPISb0Hh5dZf8sHxu-u7FKEM32NJhuKHW",
+    endpoint: "",
     expirationTime: null,
     keys: {
-        p256dh: "BNoj109NhnbaJQT6rwv_mrq3uDvpqEz4Poc0MAUg-XQnDWNE9uEygJG8xulOI8BIDIQZ0jPXjDAuFRT5hDgKtYU",
-        auth: "2GkfDAVCAMdvvktRB2_FmA"
+        p256dh: "",
+        auth: ""
     }
 }
 
 
-webpush.setVapidDetails('mailto:paraschowdhary098@gmail.com', publicKey, privateKey);
+webpush.setVapidDetails('mailto:', publicKey, privateKey);
 
 const payload = {
     notification: {
